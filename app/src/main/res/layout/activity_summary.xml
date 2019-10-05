@@ -53,15 +53,18 @@
             android:layout_height="wrap_content">
 
         </TextView>
-        <TextView
-            style="@style/Content"
-            android:id="@+id/text_view_result_comment"
-            android:background="@drawable/border"
+        <ScrollView
             android:layout_weight="1"
-            android:layout_width="match_parent"
             android:layout_height="128dp"
-            android:inputType="text|textMultiLine">
-        </TextView>
+            android:layout_width="match_parent">
+            <TextView
+                style="@style/Content"
+                android:id="@+id/text_view_result_comment"
+                android:background="@drawable/border"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+            </TextView>
+        </ScrollView>
     </LinearLayout>
 
 
