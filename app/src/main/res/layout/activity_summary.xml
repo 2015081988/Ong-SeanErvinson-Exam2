@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4th yr BSIT">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        style="@style/MainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requested Subjects">
+        </TextView>
+
+
+        <TextView
+            style="@style/Content"
+            android:id="@+id/text_view_request_subjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/MainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/SubHeader"
+            android:text="Comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            style="@style/Content"
+            android:id="@+id/text_view_result_comment"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:inputType="text|textMultiLine">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send">
+
+        </Button>
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
